@@ -6,12 +6,15 @@ import { DefaultLayout } from "./layouts";
 
 // Route Views
 import BlogOverview from "./views/BlogOverview";
-import UserProfileLite from "./views/UserProfileLite";
+import MulaiTest from "./views/MulaiTest";
 import AddNewPost from "./views/AddNewPost";
 import Errors from "./views/Errors";
 import ComponentsOverview from "./views/ComponentsOverview";
 import Tables from "./views/Tables";
 import BlogPosts from "./views/BlogPosts";
+import Sesuai from "./components/Pernyataan/Sesuai";
+import TidakSesuai from "./components/Pernyataan/TidakSesuai";
+import Dashboard from "./views/Dashboard";
 
 export default [
   {
@@ -26,9 +29,9 @@ export default [
     component: BlogOverview
   },
   {
-    path: "/user-profile-lite",
+    path: "/mulai-test",
     layout: DefaultLayout,
-    component: UserProfileLite
+    component: MulaiTest
   },
   {
     path: "/add-new-post",
@@ -54,5 +57,20 @@ export default [
     path: "/blog-posts",
     layout: DefaultLayout,
     component: BlogPosts
+  },
+  {
+    path: "/sesuai",
+    layout: DefaultLayout,
+    component: Sesuai
+  },
+  {
+    path: "/TidakSesuai",
+    layout: DefaultLayout,
+    component: TidakSesuai
+  },
+  {
+    path: "/Dashboard",
+    layout: DefaultLayout,
+    component: Dashboard
   }
 ];

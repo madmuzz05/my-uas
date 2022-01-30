@@ -1,5 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Link from "react-router-dom/Link";
+
+import RangeDatePicker from "../common/RangeDatePicker";
 import {
   Card,
   CardHeader,
@@ -28,96 +31,65 @@ const UserAccountDetails = ({ title }) => (
               <Row form>
                 {/* First Name */}
                 <Col md="6" className="form-group">
-                  <label htmlFor="feFirstName">First Name</label>
+                  <label htmlFor="feFirstName">Nama Awal</label>
                   <FormInput
-                    id="feFirstName"
-                    placeholder="First Name"
-                    value="Sierra"
+                    id="namaAwal"
+                    placeholder=""
+                    value=""
                     onChange={() => {}}
                   />
                 </Col>
                 {/* Last Name */}
                 <Col md="6" className="form-group">
-                  <label htmlFor="feLastName">Last Name</label>
+                  <label htmlFor="feLastName">Nama Akhir</label>
                   <FormInput
-                    id="feLastName"
-                    placeholder="Last Name"
-                    value="Brooks"
+                    id="namaAkhir"
+                    placeholder=""
+                    value=""
                     onChange={() => {}}
                   />
                 </Col>
               </Row>
-              <Row form>
                 {/* Email */}
-                <Col md="6" className="form-group">
-                  <label htmlFor="feEmail">Email</label>
+                <FormGroup>
+                  <label htmlFor="fePassword">Tanggal Lahir</label>
                   <FormInput
-                    type="email"
-                    id="feEmail"
-                    placeholder="Email Address"
-                    value="sierra@example.com"
+                    id=""
+                    placeholder=""
+                    value=""
                     onChange={() => {}}
-                    autoComplete="email"
                   />
-                </Col>
+                </FormGroup>
+                <FormGroup>
+                  <label htmlFor="feInputState">Jenis Kelamin</label>
+                  <FormSelect id="jenisKelamin">
+                    <option>Laki-laki</option>
+                    <option>Perempuan</option>
+                  </FormSelect>
+                </FormGroup>
                 {/* Password */}
-                <Col md="6" className="form-group">
-                  <label htmlFor="fePassword">Password</label>
+                <FormGroup>
+                  <label htmlFor="fePassword">No. Telp</label>
                   <FormInput
-                    type="password"
-                    id="fePassword"
-                    placeholder="Password"
-                    value="EX@MPL#P@$$w0RD"
+                    id="telepon"
+                    placeholder=""
+                    value=""
                     onChange={() => {}}
-                    autoComplete="current-password"
                   />
-                </Col>
-              </Row>
+                </FormGroup>
               <FormGroup>
-                <label htmlFor="feAddress">Address</label>
+                <label htmlFor="feAddress">Alamat</label>
                 <FormInput
-                  id="feAddress"
-                  placeholder="Address"
-                  value="1234 Main St."
+                  id="alamat"
+                  placeholder=""
+                  value=""
                   onChange={() => {}}
                 />
               </FormGroup>
-              <Row form>
-                {/* City */}
-                <Col md="6" className="form-group">
-                  <label htmlFor="feCity">City</label>
-                  <FormInput
-                    id="feCity"
-                    placeholder="City"
-                    onChange={() => {}}
-                  />
-                </Col>
-                {/* State */}
-                <Col md="4" className="form-group">
-                  <label htmlFor="feInputState">State</label>
-                  <FormSelect id="feInputState">
-                    <option>Choose...</option>
-                    <option>...</option>
-                  </FormSelect>
-                </Col>
-                {/* Zip Code */}
-                <Col md="2" className="form-group">
-                  <label htmlFor="feZipCode">Zip</label>
-                  <FormInput
-                    id="feZipCode"
-                    placeholder="Zip"
-                    onChange={() => {}}
-                  />
-                </Col>
-              </Row>
-              <Row form>
-                {/* Description */}
-                <Col md="12" className="form-group">
-                  <label htmlFor="feDescription">Description</label>
-                  <FormTextarea id="feDescription" rows="5" />
-                </Col>
-              </Row>
-              <Button theme="accent">Update Account</Button>
+              <Link to="/Sesuai">
+                <Button className="col-md-3 " theme="accent">Mulai Test</Button>
+              </Link>
+              
             </Form>
           </Col>
         </Row>

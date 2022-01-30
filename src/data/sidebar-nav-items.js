@@ -12,6 +12,11 @@ export default function() {
       to: "/blog-posts",
     },
     {
+      title: "Dashboard",
+      htmlBefore: '<i class="material-icons">note_add</i>',
+      to: "/dashboard",
+    },
+    {
       title: "Add New Post",
       htmlBefore: '<i class="material-icons">note_add</i>',
       to: "/add-new-post",
@@ -22,14 +27,14 @@ export default function() {
       to: "/components-overview",
     },
     {
-      title: "Tables",
-      htmlBefore: '<i class="material-icons">table_chart</i>',
-      to: "/tables",
+      title: "Mulai Tes",
+      htmlBefore: '<i class="material-icons">person</i>',
+      to: "/mulai-test",
     },
     {
-      title: "User Profile",
-      htmlBefore: '<i class="material-icons">person</i>',
-      to: "/user-profile-lite",
+      title: "Hasil Tes",
+      htmlBefore: '<i class="material-icons">table_chart</i>',
+      to: "/tables",
     },
     {
       title: "Errors",
