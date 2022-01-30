@@ -18,6 +18,8 @@ import {
   Button
 } from "shards-react";
 
+
+
 const UserAccountDetails = ({ title }) => (
   <Card small className="mb-4">
     <CardHeader className="border-bottom">

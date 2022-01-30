@@ -17,8 +17,9 @@ import {
   FormGroup,
 } from "shards-react";
 
-const TidakSesuai = ({ title }) => (
-  <Container>
+function TidakSesuai ()  {
+  return(
+    <Container>
     <br></br>
     <br></br>
     <Card  className="mb-12">
@@ -71,10 +72,12 @@ const TidakSesuai = ({ title }) => (
   <br></br>
   <br></br>
   </Container>
+  );
+}
+
   
 
   
-);
 
 
 
